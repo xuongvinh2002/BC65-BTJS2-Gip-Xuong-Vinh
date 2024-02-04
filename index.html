@@ -19,7 +19,169 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Optional JavaScript -->
+    <div class="container py-5">
+      <h2 class="bg-warning text-center">Tính tiền lương</h2>
+      <div class="form-group">
+        <label for="luong1Ngay">Lương 1 ngày </label>
+        <input
+          type="text"
+          name="luong1Ngay"
+          id="luong1Ngay"
+          class="form-control"
+          placeholder=""
+          value="100000"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="soNgayLam">Số ngày làm</label>
+        <input
+          type="text"
+          name="soNgayLam"
+          id="soNgayLam"
+          class="form-control"
+          placeholder="Nhập số ngày "
+        />
+      </div>
+      <button class="btn btn-danger" onclick="handleMoney()">Tính</button>
+      <div id="result" class="d-none"></div>
+    </div>
+
+    <div class="container py-5">
+      <h2 class="bg-warning text-center">Tính giá trị trung bình</h2>
+      <div class="form-group">
+        <label for="nhapSoThuNhat">Nhập số thứ nhất</label>
+        <input
+          type="text"
+          name="nhapSoThuNhat"
+          id="nhapSoThuNhat"
+          class="form-control"
+          placeholder="nhập số thứ nhất"
+        />
+      </div>
+      <div class="form-group">
+        <label for="nhapSoThuHai">Nhập số thứ hai</label>
+        <input
+          type="text"
+          name="nhapSoThuHai"
+          id="nhapSoThuHai"
+          class="form-control"
+          placeholder="nhập số thứ 2"
+        />
+      </div>
+      <div class="form-group">
+        <label for="nhapSoThuBa">Nhập số thứ ba</label>
+        <input
+          type="text"
+          name="nhapSoThuBa"
+          id="nhapSoThuBa"
+          class="form-control"
+          placeholder="nhập số thứ 3"
+        />
+      </div>
+      <div class="form-group">
+        <label for="nhapSoThuTu">Nhập số thứ tư</label>
+        <input
+          type="text"
+          name="nhapSoThuTu"
+          id="nhapSoThuTu"
+          class="form-control"
+          placeholder="nhập số thứ 4"
+        />
+      </div>
+      <div class="form-group">
+        <label for="nhapSoThuNam">Nhập số thứ năm</label>
+        <input
+          type="text"
+          name="nhapSoThuNam"
+          id="nhapSoThuNam"
+          class="form-control"
+          placeholder="nhập số thứ 5"
+        />
+        <button class="btn btn-danger" onclick="handleAverageValue()">
+          Tính
+        </button>
+        <div id="result1" class="d-none"></div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <h2 class="bg-warning text-center">Đổi USD sang VND</h2>
+      <div class="form-group">
+        <label for="giaTriUSD">Giá trị USD => Giá trị VND </label>
+        <input
+          type="text"
+          name="giaTriUSD"
+          id="giaTriUSD"
+          class="form-control"
+          placeholder=""
+          value="23500"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="nhapUSD">Nhập USD</label>
+        <input
+          type="text"
+          name="nhapUSD"
+          id="nhapUSD"
+          class="form-control"
+          placeholder="Nhập USD "
+        />
+      </div>
+      <button class="btn btn-danger" onclick="handleMoneyVND()">Tính</button>
+      <div id="result2" class="d-none"></div>
+    </div>
+
+    <div class="container py-5">
+      <h2 class="bg-warning text-center">Tính Chu Vi - Diện Tích</h2>
+      <div class="form-group">
+        <label for="chieuDai">Chiều dài </label>
+        <input
+          type="text"
+          name="chieuDai"
+          id="chieuDai"
+          class="form-control"
+          placeholder="Nhập chiều dài"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="chieuRong">Chiều rộng</label>
+        <input
+          type="text"
+          name="chieuRong"
+          id="chieuRong"
+          class="form-control"
+          placeholder="Nhập chiều rộng "
+        />
+      </div>
+      <button class="btn btn-danger" onclick="handleChuVi()">
+        Tính Chu Vi
+      </button>
+      <button class="btn btn-danger" onclick="handleDienTich()">
+        Tính Diện Tích
+      </button>
+
+      <div id="result3" class="d-none"></div>
+    </div>
+
+    <div class="container py-5">
+      <h2 class="bg-warning text-center">Tính tổng 2 ký số</h2>
+      <div class="form-group">
+        <label for="nhap1So">Nhấp 1 số bất kỳ</label>
+        <input
+          type="text"
+          name="nhap1So"
+          id="nhap1So"
+          class="form-control"
+          placeholder="Nhập số  "
+        />
+      </div>
+      <button class="btn btn-danger" onclick="handleTotal()">Tính</button>
+      <div id="result4" class="d-none"></div>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
